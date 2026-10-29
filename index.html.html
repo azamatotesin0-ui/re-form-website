@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="RE:FORM sustainable fashion made from recycled materials">
+<title>RE:FORM — Sustainable Fashion</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home">RE<span>:</span>FORM</a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu">☰</button>
+  <nav id="navLinks">
+    <a href="#collection">Collections</a><a href="#philosophy">Brand Philosophy</a>
+    <a href="#process">Upcycling Process</a><a href="#stores">Stores</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle">☼ Theme</button>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">CONSCIOUS FASHION · EST. 2026</p>
+    <h1>Unique Oversized<br>Clothing from<br>Recycled Materials</h1>
+    <p>Old materials. New stories.</p>
+    <a class="button yellow" href="#collection">EXPLORE LOOKBOOK ↗</a>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div></div><span></span></div>
+</section>
+<section class="section" id="collection">
+  <div class="section-heading"><div><p class="eyebrow">LESS WASTE, MORE STYLE</p><h2>OUR COLLECTION</h2></div><a href="#collection">View all ↗</a></div>
+  <div class="products">
+    <article class="product"><div class="product-art hoodie" role="img" aria-label="Hoodie illustration"><svg viewBox="0 0 220 180"><path d="M80 35Q110 4 140 35L164 55 190 86 165 105 148 87V160H72V87L55 105 30 86 56 55Z" fill="currentColor"/><path d="M83 35Q110 66 137 35" fill="none" stroke="#dce5b0" stroke-width="5"/></svg></div><h3>Reworked Hoodie</h3><p>100% reclaimed textile · Sizes S–XL</p><div class="buy-row"><b>$65</b><button class="button buy" data-product="Reworked Hoodie">BUY ↗</button></div></article>
+    <article class="product"><div class="product-art tee" role="img" aria-label="T-shirt illustration"><svg viewBox="0 0 220 180"><path d="M75 35L94 24Q110 43 126 24L145 35 181 63 159 88 143 75V158H77V75L61 88 39 63Z" fill="currentColor"/></svg></div><h3>Essential Tee</h3><p>Recycled cotton · Sizes S–XL</p><div class="buy-row"><b>$35</b><button class="button buy" data-product="Essential Tee">BUY ↗</button></div></article>
+    <article class="product"><div class="product-art trousers" role="img" aria-label="Trousers illustration"><svg viewBox="0 0 220 180"><path d="M65 25H155L147 82 136 158H105V92H98L91 158H60L73 82Z" fill="currentColor"/></svg></div><h3>Utility Trousers</h3><p>Upcycled denim · Sizes S–XL</p><div class="buy-row"><b>$80</b><button class="button buy" data-product="Utility Trousers">BUY ↗</button></div></article>
+  </div><p id="cartNotice" class="message" aria-live="polite"></p>
+</section>
+<section class="section philosophy" id="philosophy"><div><p class="eyebrow">OUR PURPOSE</p><h2>Wear the change.</h2></div><p>We give discarded textiles another life. Each RE:FORM piece is designed to last, feel good, and leave a lighter footprint on the planet.</p></section>
+<section class="section" id="process"><p class="eyebrow">CIRCULAR BY DESIGN</p><h2>GIVE MATERIALS A SECOND LIFE</h2><div class="steps"><article><span>01</span><h3>Collect</h3><p>We gather unwanted textiles and pre-loved clothing.</p></article><article><span>02</span><h3>Rework</h3><p>Materials are sorted, cleaned, and transformed into new pieces.</p></article><article><span>03</span><h3>Wear again</h3><p>Thoughtful design keeps useful materials in circulation.</p></article></div></section>
+<section class="recycle" id="stores"><div><p class="eyebrow">CLOSE THE LOOP</p><h2>GOT MATERIALS TO RECYCLE?</h2><p>Tell us what you would like to send. We’ll get in touch with the next steps.</p></div>
+<form id="recycleForm"><label for="item">Item specification</label><input id="item" name="item" placeholder="e.g. 2 cotton T-shirts" required minlength="3"><label for="address">Shipping address</label><input id="address" name="address" placeholder="Street, city, postal code" required minlength="5"><label for="phone">Contact phone</label><input id="phone" name="phone" type="tel" placeholder="+7 700 123 4567" pattern="[+0-9() -]{7,20}" required><button class="button yellow" type="submit">SEND REQUEST ↗</button><p id="formMessage" class="message" aria-live="polite"></p></form></section>
+</main>
+<footer><a class="logo" href="#home">RE<span>:</span>FORM</a><p>Old materials. New stories.</p><div><a href="#philosophy">Our philosophy</a><a href="#process">Recycling</a><a href="mailto:hello@reform.example">Contact</a></div><small>© 2026 RE:FORM. Student project for ICT6001.</small></footer>
+</body></html>
